@@ -149,15 +149,21 @@
         <span class="hanko-stamp hidden sm:inline-block">良緣</span>
       </a>
       
-      <div class="flex items-center space-x-5 sm:space-x-8 text-xs sm:text-sm tracking-widest text-stone-600 font-light">
-        <a href="#about" class="hover:text-wa-yamabuki transition-colors">關於我們</a>
-        <a href="#details" class="hover:text-wa-yamabuki transition-colors">婚宴詳情</a>
-        <a href="#map-section" class="hover:text-wa-yamabuki transition-colors">地圖交通</a>
+      <div class="flex items-center gap-2 sm:gap-5 text-[11px] sm:text-sm tracking-wider text-stone-600 font-light">
+        <a href="#about" class="hidden md:inline hover:text-wa-yamabuki transition-colors">關於我們</a>
+        <a href="#details" class="hidden md:inline hover:text-wa-yamabuki transition-colors">婚宴詳情</a>
+        <a href="#map-section" class="hidden md:inline hover:text-wa-yamabuki transition-colors">地圖交通</a>
         <a href="#rsvp" class="px-4 py-1.5 rounded-full border border-wa-yamabuki text-wa-sumi hover:bg-wa-yamabuki hover:text-white transition-all shadow-sm">
           出席回函
         </a>
+        <div class="flex items-center gap-1 border-l border-wa-border pl-2 sm:pl-4" role="group" aria-label="網站語言 / 言語切り替え">
+          <button type="button" id="lang-zh" onclick="setLanguage('zh-TW')" class="lang-switch is-active" lang="zh-TW" aria-pressed="true">中文</button>
+          <span class="text-wa-border" aria-hidden="true">/</span>
+          <button type="button" id="lang-ja" onclick="setLanguage('ja')" class="lang-switch" lang="ja" aria-pressed="false">日本語</button>
+        </div>
       </div>
     </div>
+
   </nav>
 
   <header id="hero" class="relative min-h-screen flex items-center justify-center text-center px-4 pt-16 overflow-hidden">
@@ -194,14 +200,6 @@
       </p>
 
       <div class="w-12 h-px bg-wa-yamabuki/80 mb-7"></div>
-
-      <!-- Soul Slogan -->
-      <blockquote class="font-cormorant italic text-xl sm:text-2xl text-white/95 max-w-xl mx-auto leading-relaxed tracking-wide drop-shadow">
-        “In quiet harmony, two lives fold into one gentle eternity.”
-      </blockquote>
-      <p class="text-xs sm:text-sm tracking-widest text-stone-200 mt-2 font-light">
-        三月春光正好，願與你共度往後四季
-      </p>
 
       <!-- Wedding Date Tag -->
       <div class="mt-8 px-7 py-2.5 rounded-full glass-card inline-flex items-center space-x-3 text-wa-sumi shadow-lg">
@@ -306,16 +304,19 @@
       <div class="space-y-5 text-stone-700 leading-relaxed font-light text-sm sm:text-base">
         <div class="flex items-center space-x-2">
           <span class="hanko-stamp">結緣</span>
-          <span class="text-xs tracking-widest text-wa-matcha font-medium">心之所向・素履以往</span>
+          <span class="text-xs tracking-widest text-wa-matcha font-medium">八年相識、相知而互定終生</span>
         </div>
         <h3 class="font-cormorant text-3xl text-wa-sumi tracking-wide italic">
           “Two paths quietly converged into one serene tomorrow.”
         </h3>
         <p>
-          在平淡而真摯的日子裡，我們學會傾聽彼此的節奏。從初見時的怦然，到如今柴米油鹽裡的相濡以沫，每一步都踏實而溫潤。
-        </p>
-        <p>
-          2027 年三月，春意初萌、晚風仍帶著微涼。我們誠摯邀請一路見證彼此成長的家人與摯友，來到港都高雄，共聚一堂，在柔和的早春夜色裡分享這份安靜而真摯的喜悅。
+          2027 年三月，春意初萌、晚風仍帶著微涼。
+        <br>  
+          我們誠摯邀請一路見證彼此成長的家人與摯友
+        <br>
+          在柔和的早春夜色裡來到港都高雄共聚一堂，
+        <br>
+          分享這份真摯無比的喜悅。
         </p>
         <div class="pt-2 flex items-center space-x-4">
           <div class="h-px flex-1 bg-wa-border"></div>
@@ -366,51 +367,13 @@
             <p class="text-sm text-stone-500 font-light">5 樓 福明廳 主宴會廳</p>
             <div class="space-y-1 text-sm text-stone-700 font-light">
               <p><strong class="font-medium text-wa-sumi">準時開席：</strong> 18:00 PM 入席・18:30 PM 盛宴開席</p>
-              <p><strong class="font-medium text-wa-sumi">宴席美饌：</strong> 港都瀚品名廚特選海陸御膳</p>
+              <p><strong class="font-medium text-wa-sumi">宴席美饌：</strong> 港都翰品名廚特選海陸御膳</p>
             </div>
           </div>
 
         </div>
 
         <div class="h-px bg-wa-border"></div>
-
-        <!-- Dress Code Section -->
-        <div class="bg-wa-kinari/70 rounded-2xl p-6 sm:p-8 text-center space-y-4 border border-wa-border/70">
-          <div class="inline-flex items-center space-x-2">
-            <span class="hanko-stamp">盛裝</span>
-            <span class="text-xs uppercase tracking-[0.3em] font-semibold text-wa-yamabuki">Dress Code</span>
-          </div>
-          <h4 class="text-lg font-serifTc text-wa-sumi">著裝建議・三月早春日系柔和色</h4>
-          <p class="text-xs sm:text-sm text-stone-600 max-w-xl mx-auto leading-relaxed font-light">
-            三月高雄已帶春意，傍晚仍可能微涼。建議以低飽和、柔霧感的日系色調為主，例如生成米白、春櫻霧粉、若葉灰綠、藤霧淡紫與春空灰藍；可搭配薄西裝、針織罩衫或輕質外套，在舒適之餘也與早春宴會氛圍自然相融。
-          </p>
-          <div class="spring-note rounded-xl px-4 py-3 max-w-xl mx-auto text-[11px] sm:text-xs text-stone-500 leading-relaxed">
-            女賓可選雪紡、緞面或柔軟針織；男賓可選米灰、霧藍、淺卡其西裝或襯衫。建議避免全黑、螢光色與過度高飽和色彩。
-          </div>
-          <!-- Color Palette Swatches -->
-          <div class="flex items-center justify-center space-x-4 pt-2">
-            <div class="flex flex-col items-center">
-              <span class="w-8 h-8 rounded-full border-2 border-white shadow-sm" style="background-color: #f7f1e8; border: 1px solid #d7cec4;"></span>
-              <span class="text-[10px] text-stone-500 mt-1">生成米白</span>
-            </div>
-            <div class="flex flex-col items-center">
-              <span class="w-8 h-8 rounded-full border-2 border-white shadow-sm" style="background-color: #efdeda;"></span>
-              <span class="text-[10px] text-stone-500 mt-1">春櫻霧粉</span>
-            </div>
-            <div class="flex flex-col items-center">
-              <span class="w-8 h-8 rounded-full border-2 border-white shadow-sm" style="background-color: #b9c0aa;"></span>
-              <span class="text-[10px] text-stone-500 mt-1">若葉灰綠</span>
-            </div>
-            <div class="flex flex-col items-center">
-              <span class="w-8 h-8 rounded-full border-2 border-white shadow-sm" style="background-color: #d9d2df;"></span>
-              <span class="text-[10px] text-stone-500 mt-1">藤霧淡紫</span>
-            </div>
-            <div class="flex flex-col items-center">
-              <span class="w-8 h-8 rounded-full border-2 border-white shadow-sm" style="background-color: #dbe6e8;"></span>
-              <span class="text-[10px] text-stone-500 mt-1">春空灰藍</span>
-            </div>
-          </div>
-        </div>
 
         <!-- Venue Location with Strict Mobile No-Wrap -->
         <div class="space-y-4 text-center">
@@ -584,7 +547,7 @@
       </div>
       <h2 class="text-2xl sm:text-3xl font-serifTc tracking-widest text-wa-sumi mt-1">出席回函</h2>
       <p class="text-xs sm:text-sm text-stone-500 font-light mt-2">
-        為利主廚精準備膳與座位安排，敬請於 <span class="font-medium text-wa-sumi">2027 年 1 月 31 日</span> 前撥冗填寫回覆。
+        懇請於 <span class="font-medium text-wa-sumi">2027 年 1 月 31 日（日）</span> 前撥冗填寫回覆。
       </p>
       <div class="w-8 h-0.5 bg-wa-yamabuki/60 mx-auto mt-3"></div>
     </div>
@@ -1028,6 +991,187 @@
         document.body.removeChild(tempInput);
       }
     }
+  </script>
+
+  <script>
+    // Bilingual display only: original form option values and Google Forms entry IDs remain unchanged.
+    const japaneseText = {
+    "良緣": "良縁",
+    "關於我們": "私たちについて",
+    "婚宴詳情": "披露宴のご案内",
+    "地圖交通": "アクセス",
+    "出席回函": "ご出欠の回答",
+    "春日良辰・幸得良緣": "春の日に結ばれるご縁",
+    "吉辰攜手・同心倒數": "幸せな日までのカウントダウン",
+    "天": "日",
+    "時": "時間",
+    "分": "分",
+    "秒": "秒",
+    "結緣": "ご縁",
+    "八年相識、相知而互定終生": "8年のキセキ、永遠の誓い。",
+    "2027 年三月，春意初萌、晚風仍帶著微涼。": "春の訪れを感じる2027年3月。",
+    "我們誠摯邀請一路見證彼此成長的家人與摯友": "早春の心地よい夕風が吹き抜けるころ、",
+    "在柔和的早春夜色裡來到港都高雄共聚一堂，": "これまで私たちを見守ってくださった大切な皆様と",
+    "分享這份真摯無比的喜悅。": "港町・高雄にて集い、喜びを分かち合えますことを、心より楽しみにしております。",
+    "迎賓茶會 RECEPTION": "ウェルカムレセプション RECEPTION",
+    "5 樓 福明廳 前廊迎賓區": "5階 福明ホール・ホワイエ",
+    "迎賓時間：": "受付開始：",
+    "17:30 PM 嘉賓入場": "17:30 ご来場・受付",
+    "茶點品茗：": "ウェルカムドリンク：",
+    "備有迎賓特調茶飲與精緻茶點": "お茶と軽食をご用意しております",
+    "婚禮晚宴 BANQUET": "ウェディングディナー BANQUET",
+    "5 樓 福明廳 主宴會廳": "5階 福明ホール・宴会場",
+    "準時開席：": "開宴時間：",
+    "18:00 PM 入席・18:30 PM 盛宴開席": "18:00 ご着席・18:30 開宴",
+    "宴席美饌：": "お料理：",
+    "港都瀚品名廚特選海陸御膳": "ホテル特製の海鮮・肉料理コース",
+    "高雄翰品酒店・5樓 福明廳": "高雄翰品酒店・5階 福明ホール",
+    "高雄市鹽埕區大仁路43號": "高雄市鹽埕區大仁路43号",
+    "複製飯店地址": "ホテルの住所をコピー",
+    "開啟 Google Maps App": "Google マップを開く",
+    "已成功複製地址至剪貼簿！": "住所をコピーしました！",
+    "地理位置與交通指引": "会場・アクセスのご案内",
+    "📍 高雄翰品酒店 Chateau de Chine Kaohsiung": "📍 シャトー・ド・シン 高雄 Chateau de Chine Kaohsiung",
+    "開啟大導航 →": "Google マップで経路を見る →",
+    "各項交通建議 (點擊展開詳細路線)": "交通案内（タップして詳細を表示）",
+    "大眾捷運・高雄捷運鹽埕埔站 (步行約 3 分鐘)": "MRT・塩埕埔駅（徒歩約3分）",
+    "• 搭乘高雄捷運橘線至": "• 高雄MRTオレンジラインで",
+    "捷運鹽埕埔站": "塩埕埔駅",
+    "，由": "までお越しのうえ、",
+    "2 號出口": "2番出口",
+    "出站。": "をご利用ください。",
+    "• 出站後沿大仁路直行步行約 3 分鐘（約 250 公尺），即可抵達": "• 出口から大仁路を約3分（約250m）直進すると、",
+    "高雄翰品酒店正門": "ホテルの正面入口",
+    "。": "に到着します。",
+    "高鐵左營站 / 台鐵高雄車站轉乘方式": "台湾高速鉄道・左営駅／台湾鉄道・高雄駅から",
+    "高鐵左營站：": "高鉄左営駅：",
+    "抵達後轉乘高雄捷運紅線至": "高雄MRTレッドラインで",
+    "捷運美麗島站": "美麗島駅",
+    "，轉乘橘線往西子灣方向至": "へ向かい、オレンジライン（西子湾方面）に乗り換えて",
+    "計程車乘車：": "タクシー：",
+    "從台鐵高雄車站搭乘計程車約 10-12 分鐘即可抵達；從高鐵左營站車程約 20-25 分鐘。": "台湾鉄道・高雄駅から約10～12分、高鉄左営駅から約20～25分です。",
+    "自行開車與飯店專屬/特約停車場": "お車でお越しの場合・駐車場",
+    "• 車輛 GPS 導航設定：": "• カーナビの目的地：",
+    "• 飯店備有專屬地下機械/平面停車場及特約停車位。婚宴賓客可享": "• ホテルには地下駐車場および提携駐車場があります。ご列席のお客さまには",
+    "免費折抵停車時數": "駐車料金の無料サービス",
+    "，請於離場前向 5 樓福明廳接待處出示停車證明或登記車號。": "が適用されます。お帰り前に5階福明ホールの受付で駐車券をご提示いただくか、車両番号をお伝えください。",
+    "回函": "ご回答",
+    "懇請於": "誠に勝手ながら",
+    "2027 年 1 月 31 日（日）": "2027年1月31日(日)",
+    "前撥冗填寫回覆。": "迄にご返信いただければ幸いに存じます。",
+    "姓名 NAME": "お名前 NAME",
+    "聯絡方式 CONTACT INFO": "ご連絡先 CONTACT INFO",
+    "請擇一提供以便聯繫": "ご連絡可能な方法を1つお選びください",
+    "電子信箱 Email": "メール Email",
+    "行動電話 Phone": "電話 Phone",
+    "我們將透過填寫的聯絡方式提供婚禮通知與最新席位資訊。": "ご入力いただいた連絡先に、式のご案内とお席に関する情報をお送りします。",
+    "與新人的關係 RELATIONSHIP": "新郎新婦とのご関係 RELATIONSHIP",
+    "請選擇您與新人的關係": "新郎新婦とのご関係をお選びください",
+    "男方好友": "新郎の友人",
+    "男方家人親戚": "新郎の家族・親族",
+    "女方好友": "新婦の友人",
+    "女方親友": "新婦の家族・親族",
+    "共同朋友": "共通の友人",
+    "出席人數 ATTENDEES": "出席人数 ATTENDEES",
+    "請選擇出席人數": "出席人数をお選びください",
+    "1位": "1名",
+    "2位": "2名",
+    "3位": "3名",
+    "4位": "4名",
+    "5位以上": "5名以上",
+    "心意相隨・無法出席 (0位)": "欠席（0名）",
+    "選擇出席後將展開飲食與幼童座位需求選項。": "出席を選ぶと、お食事とお子さま用の椅子についての項目が表示されます。",
+    "飲食需求 DIETARY PREFERENCE": "お食事のご希望 DIETARY PREFERENCE",
+    "葷食": "通常食",
+    "全素": "ヴィーガン",
+    "蛋奶素": "卵・乳製品可のベジタリアン",
+    "特殊需求 (請填於下方備註)": "その他（下記の備考欄にご記入ください）",
+    "是否需要兒童椅 NEED HIGH CHAIR": "お子さま用の椅子 NEED HIGH CHAIR",
+    "不需要": "不要",
+    "需要": "必要",
+    "給新人的祝福與備註 WISHES & NOTES": "お祝いのメッセージ・備考 WISHES & NOTES",
+    "確認送出回函 CONFIRM RSVP": "回答を送信 CONFIRM RSVP",
+    "如遇特殊瀏覽器防護阻擋，亦可點此直接於 Google 表單填寫 ↗": "送信できない場合はこちらから Google フォームにご入力ください ↗",
+    "回函已送往 Google 表單": "回答を Google フォームへ送信しました",
+    "Google 表單確認頁已在新分頁開啟。請確認該頁顯示「已記錄您的回覆」；確認後即可關閉新分頁。": "Google フォームの確認ページが新しいタブで開きます。「回答を記録しました」と表示されていることをご確認のうえ、タブを閉じてください。",
+    "確認關閉 CLOSE": "閉じる CLOSE",
+    "美滿": "末永く幸せに",
+    "例：yourname@example.com": "例：yourname@example.com",
+    "例：0912-345-678": "例：0912-345-678",
+    "例：請輸入您的 LINE ID 或手機綁定號碼": "例：LINE ID または登録電話番号",
+    "正在送往 GOOGLE FORM...": "Google フォームへ送信中..."
+};
+    const originalNodes = [];
+    const originalAttrs = [];
+    const translationRoot = document.body;
+    const walker = document.createTreeWalker(translationRoot, NodeFilter.SHOW_TEXT, {
+      acceptNode(node) {
+        if (node.parentElement?.closest('script, style, noscript, svg')) return NodeFilter.FILTER_REJECT;
+        return node.nodeValue.trim() ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+      }
+    });
+    while (walker.nextNode()) {
+      const node = walker.currentNode;
+      originalNodes.push([node, node.nodeValue]);
+    }
+    translationRoot.querySelectorAll('[placeholder], [title], [aria-label]').forEach(el => {
+      ['placeholder', 'title', 'aria-label'].forEach(attr => {
+        if (el.hasAttribute(attr)) originalAttrs.push([el, attr, el.getAttribute(attr)]);
+      });
+    });
+    let currentLanguage = 'zh-TW';
+    function translateValue(original) {
+      const trimmed = original.trim();
+      if (!Object.prototype.hasOwnProperty.call(japaneseText, trimmed)) return original;
+      return original.replace(trimmed, japaneseText[trimmed]);
+    }
+    function setLanguage(language) {
+      currentLanguage = language === 'ja' ? 'ja' : 'zh-TW';
+      originalNodes.forEach(([node, value]) => {
+        if (node.isConnected) node.nodeValue = currentLanguage === 'ja' ? translateValue(value) : value;
+      });
+      originalAttrs.forEach(([el, attr, value]) => {
+        if (el.isConnected) el.setAttribute(attr, currentLanguage === 'ja' ? (japaneseText[value] || value) : value);
+      });
+      document.documentElement.lang = currentLanguage;
+      document.title = currentLanguage === 'ja' ? 'Steve × Esther | 結婚式のご招待' : 'Steve x Esther | 婚禮邀請函 Wedding Invitation';
+      document.querySelectorAll('.lang-switch').forEach(btn => {
+        const active = btn.id === (currentLanguage === 'ja' ? 'lang-ja' : 'lang-zh');
+        btn.classList.toggle('is-active', active);
+        btn.setAttribute('aria-pressed', String(active));
+      });
+      if (typeof currentContactMethod !== 'undefined') {
+        const input = document.getElementById('contact_value_display');
+        const hint = document.getElementById('contact_hint_text');
+        if (input) {
+          const placeholders = {
+            email: '例：yourname@example.com',
+            phone: '例：0912-345-678',
+            line: '例：請輸入您的 LINE ID 或手機綁定號碼'
+          };
+          const original = placeholders[currentContactMethod];
+          input.placeholder = currentLanguage === 'ja' ? (japaneseText[original] || original) : original;
+        }
+        if (hint) {
+          const msg = '我們將透過填寫的聯絡方式提供婚禮通知與最新席位資訊。';
+          hint.textContent = currentLanguage === 'ja' ? japaneseText[msg] : msg;
+        }
+      }
+      try { localStorage.setItem('wedding-language', currentLanguage); } catch (_) {}
+    }
+    // Keep JavaScript-generated contact hints and submit text in the selected language.
+    const originalSetContactMethod = setContactMethod;
+    setContactMethod = function(method) {
+      originalSetContactMethod(method);
+      setLanguage(currentLanguage);
+    };
+    const originalShowSuccessModal = showSuccessModal;
+    showSuccessModal = function() {
+      originalShowSuccessModal();
+      const submitLabel = document.querySelector('#submitBtn span');
+      if (submitLabel && currentLanguage === 'ja') submitLabel.textContent = japaneseText['確認送出回函 CONFIRM RSVP'];
+    };
+    try { if (localStorage.getItem('wedding-language') === 'ja') setLanguage('ja'); } catch (_) {}
   </script>
 </body>
 </html>
